@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:cadetblue ;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: 100px auto;
+    border: black 5px solid;
+    position: relative;
+}
+.points{
+    position: absolute;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 48%;
+    left: 48%;
+}
+.hours{
+    font-size: 28px;
+    color: black;
+}
+.hours.hour12{
+    position: absolute;
+    top: 0px;
+    left: 226px;
+}
+.hours.hour1{
+    position: absolute;
+    top: 38px;
+    left: 356px;
+}
+.hours.hour2{
+    position: absolute;
+    top: 118px;
+    left: 436px;
+}
+.hours.hour3{
+    position: absolute;
+    top: 225px;
+    left: 468px;
+}
+.hours.hour4{
+    position: absolute;
+    top: 339px;
+    left: 436px;
+}
+.hours.hour5{
+    position: absolute;
+    top: 422px;
+    left: 356px;
+}
+.hours.hour6{
+    position: absolute;
+    top: 460px;
+    left: 237px;
+}
+.hours.hour11{
+    position: absolute;
+    top: 38px;
+    left: 113px;
+}
+.hours.hour10{
+    position: absolute;
+    top: 118px;
+    left: 35px;
+}
+.hours.hour9{
+    position: absolute;
+    top: 225px;
+    left: 9px;
+}
+.hours.hour8{
+    position: absolute;
+    top: 339px;
+    left: 40px;
+}
+.hours.hour7{
+    position: absolute;
+    top: 422px;
+    left: 117px;
+}
+.brand{
+    color: black;
+    position: absolute;
+    top: 119px;
+    left: 217px;
+    font-size: 24px;
+    z-index: -10;
+}
+.wraper{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 47px;
+    left: 44px;
+    border-radius:50%;
+}
+.minutewraper{
+    position: relative;
+}
+.minutewraper .minutehand{
+    position: absolute;
+    height: 200px;
+    width: 4px;
+    background-color: black;
+    top: -5px;
+    left: 195px;
+    z-index: 1;
+    transform: rotatez(0deg);
+    transform-origin: bottom;
+}
+.hourwraper .hourhand{
+    position: absolute;
+    height: 96px;
+    width: 4px;
+    background-color: black;
+    top: 99px;
+    left: 195px;
+    z-index: 2;
+    transform: rotatez(0deg);
+    transform-origin: bottom;
+}
+.secondwraper .secondhand{
+    position: absolute;
+    height: 190px;
+    width: 4px;
+    background-color: black;
+    top: 5px;
+    left: 195px;
+    transform: rotatez(0deg);
+    transform-origin: bottom;
+    z-index: -2;
+    background-color: rgba(255, 255, 255, 0.636);
+}
